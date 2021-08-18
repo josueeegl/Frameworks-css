@@ -4,32 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frameworks css - Tailwind CSS</title>
+    <title>Frameworks css - Pure CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+      integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <form
+    <form class="pure-form pure-form-stacked"
       method="GET"
       enctype="application/x-www-form-urlencoded"
       action="/archivo.html"
     >
-      <p>
+    <div class="pure-g m-xs">
+      <p class="pure-u-1 pure-u-md-1-3">
         <label
           >Nombre:
           <input type="text" name="nombre_cliente" required />
         </label>
       </p>
-      <p>
+      <p class="pure-u-1 pure-u-md-1-3" >
         <label
           >Email:
           <input type="email" name="direccion_correo" />
         </label>
       </p>
-      <p>
+      <p class="pure-u-1 pure-u-md-1-3">
         <label
           >Telefono:
           <input type="tel" name="numero_telefono" required />
         </label>
       </p>
+    </div>
       <fieldset>
         <legend>¿Tipo de taxi?</legend>
         <p>
@@ -38,7 +46,7 @@
           </label>
         </p>
         <p>
-          <label>
+          <label >
             <input type="radio" name="taxi" required value="van" /> Van
           </label>
         </p>
@@ -105,7 +113,7 @@
         </label>
       </p>
       <p>
-        <button>Hacer cita</button>
+        <button class="pure-button pure-input-1-2 pure-button-primary">Hacer cita</button>
       </p>
     </form>
   </body>
